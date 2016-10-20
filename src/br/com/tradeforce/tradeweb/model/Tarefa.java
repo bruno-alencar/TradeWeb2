@@ -1,4 +1,4 @@
-package br.com.tradeforce.model;
+package br.com.tradeforce.tradeweb.model;
 
 import java.util.List;
 

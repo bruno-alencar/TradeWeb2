@@ -1,4 +1,4 @@
-package br.com.tradeforce.controller;
+package br.com.tradeforce.tradeweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

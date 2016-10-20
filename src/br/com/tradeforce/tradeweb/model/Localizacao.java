@@ -1,4 +1,4 @@
-package br.com.tradeforce.model;
+package br.com.tradeforce.tradeweb.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ public class Localizacao {
 	private Long id;
 	
 	private Double latitude;
-	private Double lontitude;
+	private Double longitude;
 	
 	public Long getId() {
 		return id;
@@ -27,12 +27,11 @@ public class Localizacao {
 	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
-	public Double getLontitude() {
-		return lontitude;
+	public Double getLongitude() {
+		return longitude;
 	}
-	public void setLontitude(Double lontitude) {
-		this.lontitude = lontitude;
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
 	}
-	
-	
+
 }

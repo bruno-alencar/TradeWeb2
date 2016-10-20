@@ -1,4 +1,4 @@
-package br.com.tradeforce.model;
+package br.com.tradeforce.tradeweb.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,15 +6,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Empresa {
+public class Rota {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
 	private String nome;
-	private String razaoSocial;
-	private int cnpj;
-	
+	private Double preco;
 	
 	public Long getId() {
 		return id;
@@ -28,19 +25,13 @@ public class Empresa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getRazaoSocial() {
-		return razaoSocial;
+	public Double getPreco() {
+		return preco;
 	}
-	public void setRazaoSocial(String razaoSocial) {
-		this.razaoSocial = razaoSocial;
+	public void setPreco(Double preco) {
+		this.preco = preco;
 	}
-	public int getCnpj() {
-		return cnpj;
-	}
-	public void setCnpj(int cnpj) {
-		this.cnpj = cnpj;
-	}
-	
+
 	
 
 }

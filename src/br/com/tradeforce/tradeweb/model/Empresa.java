@@ -1,4 +1,4 @@
-package br.com.tradeforce.model;
+package br.com.tradeforce.tradeweb.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,14 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Usuario {
+public class Empresa {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
 	private String nome;
-	private String login;
-	private String senha;
+	private String razaoSocial;
+	private int cnpj;
 	
 	
 	public Long getId() {
@@ -28,17 +28,17 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getLogin() {
-		return login;
+	public String getRazaoSocial() {
+		return razaoSocial;
 	}
-	public void setLogin(String login) {
-		this.login = login;
+	public void setRazaoSocial(String razaoSocial) {
+		this.razaoSocial = razaoSocial;
 	}
-	public String getSenha() {
-		return senha;
+	public int getCnpj() {
+		return cnpj;
 	}
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setCnpj(int cnpj) {
+		this.cnpj = cnpj;
 	}
 	
 	
